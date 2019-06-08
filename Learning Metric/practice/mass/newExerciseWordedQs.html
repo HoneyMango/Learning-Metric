@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--local links-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/js.js"></script>
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Merienda|Permanent+Marker" rel="stylesheet">
+    
+    <!--Animations-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: DodgerBlue;">
+    <div id="massWordedTitle" class="container text-center">
+        <h1 class="display-1 perm" style="color:;">Worded Problems</h1>
+        <br><br><br><br><br><br>
+        <!--buttons to select number of questions-->
+        <div class="row justify-content-center" style="height: 100%">
+            <div class="col-xl-6">
+                <button id="eight" class="btn btn-block btn-lg text-white p-5 serf" onclick="practiceWorded()" style="background-color: blue; font-size: 40px;">Begin</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--    BACK BUTTON-->
+    <div id="backBtn" class="backBtn">
+        <a href="../PracticeMass.html"><button type="button" class="btn btn-info" style="font-size: 23px;">Back</button></a>
+    </div>
+
+    
+<!--QUESTIONS STORED HERE-->
+    <div class="container">
+        <h1 id="title" class="pt-3 pb-3 text-center hide serf display-4" style="color: Blue"><i><b>Solve these problems</b></i></h1>
+        <div id="top1" class="row justify-content-center">
+            <div id="c0" class="col-xl-8 hide" style="font-size: 35px;"></div>
+            <div id="c1" class="col-xl-8 hide" style="font-size: 35px;"></div>
+            <div id="c2" class="col-xl-8 hide" style="font-size: 35px;"></div>
+            <div id="c3" class="col-xl-8 hide" style="font-size: 35px;"></div>
+            <div id="c4" class="col-xl-8 hide" style="font-size: 35px;"></div>
+            <div id="c5" class="col-xl-8 hide" style="font-size: 35px;"></div>
+            <div id="c6" class="col-xl-8 hide" style="font-size: 35px;"></div>
+            <div id="c7" class="col-xl-8 hide" style="font-size: 35px;"></div>
+        </div>
+    </div>
+
+    
+        
+<!--    FOR BACKGROUND COLOR CHANGE-->
+    <div id="bg-whole" class="whole"></div>
+    
+    
+    
+    <!--    TO HOLD ANSWER-->
+<!--    <div id="wqAns" class="hide"></div>-->
+    
+    <!-- HINTS -->
+<!--    <p id="feedback" class="text-center lato" style="font-size: 45px;"></p>-->
+    
+    
+    
+<!--    END, SHOW SCORE-->
+    <div id="wordQEnd" class="text-center lato centerPage hide">
+        <h1 class="display-1 text-light">Score: <span id="wordScore"></span>/7</h1>
+        <br><br><button class="btn btn-primary btn-lg" onclick="window.location.reload()">Restart</button> <a href="../PracticeMass.html"><button class="btn btn-outline-dark btn-lg ml-5">Back to Exercises</button></a>
+    </div>
+
+      
+</body>
+</html>

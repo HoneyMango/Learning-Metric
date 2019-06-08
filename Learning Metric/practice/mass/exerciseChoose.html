@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--local CSS-->
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    <!--local JS-->
+    <script src="../../js/js.js"></script>
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Merienda|Chewy" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">-->
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: Yellow;">
+    <div id="begin" class="container text-center">
+        <h1 class="display-2 mer">Assign Units</h1>
+        <br><br><br>
+        <!--buttons to select number of questions-->
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <button id="bgn" class="btn btn-primary btn-block btn-lg p-4 serf" onclick="strt()">Begin</button>
+            </div>
+        </div>
+    </div>
+    
+<!--    BACK BUTTON-->
+    <div class="backBtn">
+        <a href="../PracticeMass.html"><button type="button" class="btn btn-info" style="font-size: 23px;">Back</button></a>
+    </div>
+    
+    
+<!--    IMAGES-->
+    <div id="choosePg" class="container text-center justify-content-center hide">
+        <h1 class="display-4 chewy">What unit is this weighed in?</h1>
+        <div class="row pt-3 pb-3">
+                <img id="massImg" class="mx-auto d-block" src="../../img/anchorButter.png" width="494" height="300px">
+            <br>
+            
+        </div>
+        <h1 id="desc">butter</h1>
+        
+
+<!--    CHANGES IMAGES AND BUTTONS-->
+        <h2 id="first"></h2>
+        <div id="buttns" class="mt-4">
+            <button id="btng" class="btn btn-primary chooseBtn" onclick="check(1)"><h2 class="display-4">g<br>(grams)</h2></button> 
+
+            <button id="btnkg" class="btn btn-primary chooseBtn ml-5" onclick="check(2)"><h2 class="display-4">Kg<br>(kilograms)</h2></button>
+            
+            
+        </div>
+        <h1 id="correct" class="display-2 text-success hide">CORRECT!</h1>
+        <h1 id="incorrect" class="display-2 text-danger hide">wrong</h1>
+        
+<!--        INVISIBLE DIV TO HOLD ANSWER-->
+        <div id="chooseAns" class="invis"><p></p></div>
+         
+    </div>
+    
+    <!--CORRECT-->
+<!--    <p id="" class="enterAns hide text-success">CORRECT!</p>-->
+    
+    
+    
+    <div id="again" class="text-center lato centerPage hide">
+        <h1 class="display-1 text-success">Score: <span id="score"></span>/7</h1>
+        <br><br><button class="btn btn-primary btn-lg" onclick="window.location.reload()">Restart?</button> <a href="../PracticeMass.html"><button class="btn btn-outline-dark btn-lg ml-5">Back to Exercises</button></a>
+    </div>
+    
+    <!-- END, ASK TO PLAY AGAIN OR GO BACK TO EXERICSE-->
+<!--
+    <div id="again" class="container hide">
+            <h1>Score: <span id="score"></span>/7</h1>
+            
+            <button class="btn btn-primary">Back</button>
+            <button class="btn btn-primary" onclick="window.location.reload(false);">Play again?</button>
+        </div>
+-->
+</body>
+</html>
