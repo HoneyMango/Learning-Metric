@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--local links-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/js.js"></script>
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Merienda|Open+Sans:600|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: GreenYellow;">
+    <div class="container">
+        <h1 class="pt-2 pb-3 text-center display-2 chewy">You try!</h1>
+        <div class="row pt-5 text-center justify-content-center" style="font-size: 25px;">
+            
+<!--            FIRST QUESTIONS-->
+            <div id="first" class="col-xl-7 border border-primary rounded" style="font-size: 40px; background-color: Violet;">
+                <p>If 1000 g = 1 Kg<br>
+                    and 2000 g = 2 Kg<br>
+                    then 4000 g = <input type="number" id="LMeg1" class="text-center"> Kg
+                </p>
+
+                <button type="button" id="LMegBtn1" class="btn btn-primary mb-3" onclick="btn1(1)">Check Answer</button>
+                
+                <p id="lmh1" class="hide" style="color: blue;">Remember to divide by 1000</p>
+                <p id="lma1" class="hide" style="color: blue;">4000 &#247; 1000 = ?</p>
+                <p id="lmh1a" class="hide">That's the same answer as before</p>
+                <p id="lmta1" class="hide">You need to type an answer</p>
+                <h1 id="lmc1" class="display-3 text-success hide"><b>&#10003;</b></h1>
+            </div>
+            
+<!--            SECOND QUESTION-->
+            <div id="second" class="col-xl-7 hide border border-primary rounded" style="font-size: 40px; background-color: Violet;">
+                <p>If 1000 g = 1 Kg<br>
+                    and 2000 g = 2 Kg<br>
+                    then 7000 g = <input type="number" id="LMeg2" class="text-center"> Kg
+                </p>
+
+                <button type="button" id="LMegBtn2" class="btn btn-primary mb-3" onclick="btn1(2)">Check Answer</button>
+                
+                <p id="lmh2" class="hide" style="color: blue;">Remember to divide by 1000</p>
+                <p id="lma2" class="hide" style="color: blue;">7000 &#247; 1000 = ?</p>
+                <p id="lmh2a" class="hide">That's the same answer as before</p>
+                <p id="lmta2" class="hide">You need to type an answer</p>
+                <h1 id="lmc2" class="display-3 text-success hide"><b>&#10003;</b></h1>
+            </div>
+            
+<!--            THIRD QUESTION-->
+            <div id="third" class="col-xl-7 hide border border-primary rounded" style="font-size: 40px; background-color: Violet;">
+                <p>If 1 Kg = 1000 g<br>
+                    and 2 Kg = 2000 g<br>
+                    then 6 Kg = <input type="number" id="LMeg3" class="text-center"> g
+                </p>
+
+                <button type="button" id="LMegBtn3" class="btn btn-primary mb-3" onclick="btn1(3)">Check Answer</button>
+                
+                <p id="lmh3" class="hide" style="color: blue;">Remember to multiply by 1000</p>
+                <p id="lma3" class="hide" style="color: blue;">6 x 1000 = ?</p>
+                <p id="lmh3a" class="hide">That's the same answer as before</p>
+                <p id="lmta3" class="hide">You need to type an answer</p>
+                <h1 id="lmc3" class="display-3 text-success hide"><b>&#10003;</b></h1>
+            </div>
+            
+<!--            FOURTH QUESTION-->
+            <div id="fourth" class="col-xl-7 hide border border-primary rounded" style="font-size: 40px; background-color: Violet;">
+                <p>If 1 Kg = 1000 g<br>
+                    and 2 Kg = 2000 g<br>
+                    then 9 Kg = <input type="number" id="LMeg4" class="text-center"> g
+                </p>
+
+                <button type="button" id="LMegBtn4" class="btn btn-primary mb-3" onclick="btn1(4)">Check Answer</button>
+                
+                <p id="lmh4" class="hide" style="color: blue;">Remember to multiply by 1000</p>
+                <p id="lma4" class="hide" style="color: blue;">9 x 1000 = ?</p>
+                <p id="lmh4a" class="hide">That's the same answer as before</p>
+                <p id="lmta4" class="hide">You need to type an answer</p>
+                <h1 id="lmc4" class="display-3 text-success hide"><b>&#10003;</b></h1>
+            </div>
+            
+            
+            <!--END OF LEARNING BUTTON-->
+            <a href="lMass8.html"><button type="button" id="LMegBtnNext" class="btn btn-success btn-lg invis firstBtn">Next</button></a>
+        </div>
+    </div>
+    
+    
+    <!--        NEED TO ENTER ANSWER-->
+            <p id="typeAns" class="enterAns hide">You need to type an answer</p>
+    
+    
+    <a href="lMass6.html"><button id="" type="button" class="btn btn-primary btn-lg btn-lg backBtn">Back</button></a>
+</body>
+</html>

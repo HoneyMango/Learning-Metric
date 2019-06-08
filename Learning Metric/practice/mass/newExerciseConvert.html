@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--local links-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/js.js"></script>
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Merienda|Open+Sans:600|Permanent+Marker" rel="stylesheet">
+    
+    <!--Animations-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: Violet;">
+    <div id="massConvertNumQs" class="container text-center">
+        <h1 class="display-1 perm" style="color: FireBrick;">Conversion</h1>
+        <br><br><br><br><br><br>
+        <!--buttons to select number of questions-->
+        <div class="row justify-content-center" style="height: 100%">
+            <div class="col-xl-6">
+                <button id="four" class="btn btn-primary btn-block btn-lg p-5 serf" onclick="practiceConv(4)">4 QUESTIONS</button>
+            </div>
+            <div class="col-xl-6">
+                <button id="eight" class="btn btn-primary btn-block btn-lg p-5 serf" onclick="practiceConv(8)">8 QUESTIONS</button>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <!--    BACK BUTTON-->
+    <div id="backBtn" class="backBtn">
+        <a href="../PracticeMass.html"><button type="button" class="btn btn-info" style="font-size: 23px;">Back</button></a>
+    </div>
+    
+    
+    <div id="bg-whole" class="whole"></div>
+    
+    
+    <div class="container">
+        <h1 id="title" class="pt-3 text-center hide serf display-3 text-primary"><i>Convert</i></h1>
+        
+        <div id="top1" class="row justify-content-center">
+            <div id="c1" class="col-xl-7 hide" style="font-size: 30px;"></div>
+            <div id="c2" class="col-xl-7 hide" style="font-size: 30px;"></div>
+            <div id="c3" class="col-xl-7 hide" style="font-size: 30px;"></div>
+            <div id="c4" class="col-xl-7 hide" style="font-size: 30px;"></div>
+            <div id="c5" class="col-xl-7 hide" style="font-size: 30px;"></div>
+            <div id="c6" class="col-xl-7 hide" style="font-size: 30px;"></div>
+            <div id="c7" class="col-xl-7 hide" style="font-size: 30px;"></div>
+            <div id="c8" class="col-xl-7 hide" style="font-size: 30px;"></div>
+<!--            <div id="next" class="col-xl-1 hide"><button class="btn btn-primary" onclick="convNextBtn()">Next</button></div>-->
+        </div>
+        
+    </div>
+    
+    <!-- HINTS -->
+    <p id="feedback" class="text-center lato" style="font-size: 45px;"></p>
+    
+    
+    <div class="pmHints">
+<!--    HINT 1-->
+        <div id="hint1" class="row justify-content-center lato s30">
+            <p id="h1" class="hide"><span id="h1a"></span> <span id="h1au"></span> = <span id="h1b"></span> <span id="h1bu"></span></p>
+        </div>
+    
+<!--    HINT 2-->
+        <div id="hint2" class="row justify-content-center lato s30">
+            <p id="h2" class="hide"><span id="h2a"></span> <span id="h2au"></span> = <span id="h2b"></span> <span id="h2bu"></span></p>
+        </div>
+    
+<!--    HINT 3-->
+        <div id="hint3" class="row justify-content-center lato s30">
+            <p id="h3" class="hide"><span id="h3a"></span> <span id="h3au"></span> + <span id="h3b"></span> <span id="h3bu"></span> = ?</p>
+        </div>
+    </div>
+    
+    
+<!--    END, SHOW SCORE-->
+    <div id="convEnd" class="text-center lato centerPage hide">
+        <h1 class="display-1 text-light">Score: <span id="convScore"></span>/<span id="convScoreTotal"></span></h1>
+        <br><br><button class="btn btn-primary btn-lg" onclick="window.location.reload()">Restart</button> <a href="../PracticeMass.html"><button class="btn btn-outline-dark btn-lg ml-5">Back to Exercises</button></a>
+    </div>
+
+      
+</body>
+</html>
+
+
